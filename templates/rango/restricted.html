@@ -1,0 +1,8 @@
+{% extends 'rango/base.html' %}
+{% block title %}Restricted Page{% endblock %}
+
+{% block body_block %}
+    {% if user.is_authenticated %}
+ 	Secret messages
+	{% endif %}
+{% endblock %}
